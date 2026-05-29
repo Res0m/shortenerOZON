@@ -1,0 +1,18 @@
+*.exe
+*.test
+*.out
+/vendor/
+
+configs/local.yaml
+.env
+
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+docker-compose.override.yml
+
+
+# !configs/docker.yaml  (не нужно экранировать, просто не добавляй в игнор)
+# !configs/example.yaml

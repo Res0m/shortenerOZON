@@ -1,0 +1,10 @@
+.git
+.gitignore
+README.md
+LICENSE
+*.md
+.env
+vendor
+.idea
+.vscode
+tests

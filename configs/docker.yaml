@@ -1,0 +1,13 @@
+
+http_server:
+  address: ":8081"        
+  read_timeout: "5s"
+  write_timeout: "10s"
+  idle_timeout: "60s"
+
+database:
+  dsn: "postgresql://postgres:password@db:5432/OzonShortener?sslmode=disable"
+
+settings:
+  length_short_url: 10
+  storage_type: "postgres" 

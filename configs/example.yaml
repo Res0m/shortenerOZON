@@ -1,0 +1,13 @@
+http_server:
+  address: ":8080"
+  timeout: "5s"
+  idle_timeout: "60s"
+
+database:
+  # Замени localhost на хост своей базы, если запускаешь не локально
+  # Пароль заменен на пример
+  dsn: "postgresql://postgres:YOUR_PASSWORD_HERE@localhost:5432/OzonShortener?sslmode=disable"
+
+settings:
+  length_short_url: 10
+  storage_type: "memory" # Или "postgres"
