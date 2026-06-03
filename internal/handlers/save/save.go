@@ -48,8 +48,6 @@ func New(repo repository.Repository, size int, validate *validator.Validate) htt
 
 		existingHash, err := repo.GetHashByURL(req.URL)
         if err == nil {
-            // Ссылка уже есть! Возвращаем старый хеш.
-            // Статус 200 OK или 201 Created — на твой выбор. 200 честнее для "найдено".
             render.Status(r, http.StatusOK) 
             render.JSON(w, r, Response{Hash: existingHash})
             return
